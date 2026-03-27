@@ -1,15 +1,19 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
+import BoardsSection from "@/components/BoardsSection";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
-import Testimonials from "@/components/Testimonials";
-import FinalCTA from "@/components/FinalCTA";
-import Gallery from "@/components/Gallery";
-import BoardsSection from "@/components/BoardsSection";
+
+// Lazy load heavy sections
+const Gallery = dynamic(() => import("@/components/Gallery"));
+const Testimonials = dynamic(() => import("@/components/Testimonials"));
+const FinalCTA = dynamic(() => import("@/components/FinalCTA"));
 
 export default function Home() {
   const [lang, setLang] = useState("marathi");
@@ -29,13 +33,15 @@ export default function Home() {
     <>
       <Navbar lang={lang} toggleLang={toggleLang} />
       <Hero lang={lang} />
-      <TrustStrip lang={lang}/>
-      <BoardsSection lang={lang}/>
-      <ProblemSection lang={lang}/>
-      <SolutionSection lang={lang}/>
-      <Gallery lang={lang}/>
-      <Testimonials lang={lang}/>
-      <FinalCTA lang={lang}/>
+      <TrustStrip lang={lang} />
+      <BoardsSection lang={lang} />
+      <ProblemSection lang={lang} />
+      <SolutionSection lang={lang} />
+
+      {/* Lazy loaded sections */}
+      <Gallery lang={lang} />
+      <Testimonials lang={lang} />
+      <FinalCTA lang={lang} />
     </>
   );
 }
