@@ -8,7 +8,7 @@ The website is built using **Next.js and Tailwind CSS**, focusing on **fast perf
 
 # 🚀 Live Demo
 
-[👉 Demo LInk](https://ghorpade-classes.vercel.app)
+[👉 Demo LInk](https://ghorpade-classes-landing-page.vercel.app/)
 
 This project is deployed on **Vercel** and automatically updates whenever new changes are pushed to GitHub.
 
