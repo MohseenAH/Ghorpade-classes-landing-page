@@ -34,7 +34,7 @@ export default function Navbar({ lang, toggleLang }) {
   const t = content[lang];
 
   return (
-    <header className="sticky top-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 h-17.5 flex items-center">
+    <header className="sticky top-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 h-[70] flex items-center">
       <nav className="max-w-7xl mx-auto w-full px-4 md:px-6 flex items-center justify-between">
         
         {/* 🏷️ LOGO SECTION */}
