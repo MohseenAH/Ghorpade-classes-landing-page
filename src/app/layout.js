@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="PbA0gLBwUPRnxQ0HiF25pISaPsjN2i6qu_TZbw-pqeM" />
+        <meta name="google-site-verification" content="4VWYTrqsITb2Qh3iWh0fdPtYqR5Tyz24DPb5_x6GKZs" />
         <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
