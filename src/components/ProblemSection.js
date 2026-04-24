@@ -110,8 +110,10 @@ export default function ProblemSection({ lang }) {
 
         {/* 🚀 Strong CTA */}
         <a
-          href="https://wa.me/91XXXXXXXXXX"
+          href="https://wa.me/919370663838"
           className="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-4 rounded-xl font-semibold text-base hover:bg-green-600 transition shadow-md"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FaWhatsapp />
           {data.cta}

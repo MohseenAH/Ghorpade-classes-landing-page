@@ -134,8 +134,10 @@ export default function TrustStrip({ lang }) {
           </ul>
 
           <a
-            href="https://wa.me/91XXXXXXXXXX"
+            href="https://wa.me/919370663838"
             className="flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition w-full"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaWhatsapp />
             {data.cta}

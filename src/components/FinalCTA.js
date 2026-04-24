@@ -69,6 +69,8 @@ export default function FinalCTA({ lang }) {
             <a
               href="https://wa.me/919370663838"
               className="bg-green-500 text-black px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:scale-105 transition"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaWhatsapp />
               {data.whatsapp}

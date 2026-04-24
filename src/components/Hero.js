@@ -13,7 +13,7 @@ export default function Hero({ lang }) {
       trust: "⭐ 500+ विद्यार्थ्यांचे मार्क्स सुधारले",
       ctaWA: "Free Demo Book करा",
       ctaCall: "आत्ताच कॉल करा",
-      msg: "Hi, मला डेमो क्लास बुक करायचा आहे"
+      msg: "Hi, मला Wadaki (Saswad Road) येथील Ghorpade Classes बद्दल माहिती हवी आहे आणि डेमो क्लास बुक करायचा आहे"
     },
     english: {
       brand: "Ghorpade Coaching Classes",
@@ -23,7 +23,7 @@ export default function Hero({ lang }) {
       trust: "⭐ 500+ Students Improved Their Results",
       ctaWA: "Book Free Demo Now",
       ctaCall: "Call Now",
-      msg: "Hi, I want to book a demo class"
+      msg: "Hi, I found Ghorpade Classes in Wadaki (Saswad Road Pune) on Google. I want to book a demo class."
     }
   };
 
@@ -32,7 +32,7 @@ export default function Hero({ lang }) {
   return (
     <section className="
       relative w-full 
-      pt-12 md:pt-16 
+      py-5
       pb-6 
       px-5 sm:px-6 
       bg-linear-to-b from-blue-50/50 to-white
@@ -48,14 +48,12 @@ export default function Hero({ lang }) {
           </span>
 
           {/* 🔥 CONTROLLED HEADLINE */}
-          <h1 className="
-            mt-3 font-black text-slate-900 leading-[1.1] tracking-tight
-            text-[26px] sm:text-[34px] md:text-[40px] lg:text-[46px]
-            max-w-[320px] sm:max-w-125 md:max-w-130
-          ">
-            <span className="block">{t.line1}</span>
-            <span className="block text-blue-600 italic">{t.line2}</span>
+          <h1 className="mt-3 font-black text-slate-900 leading-[1.1] tracking-tight text-[26px] sm:text-[34px] md:text-[40px] lg:text-[46px] max-w-[320px] sm:max-w-125 md:max-w-130">
+          Best Coaching Classes in Wadaki, Saswad Road Pune
           </h1>
+          <p className="mt-2 text-blue-600 font-bold text-lg">
+            {t.line1} {t.line2}
+          </p>
 
           <p className="mt-2 text-sm md:text-base text-slate-600 font-medium max-w-sm">
             {t.sub}
@@ -64,12 +62,16 @@ export default function Hero({ lang }) {
           <p className="mt-1 text-xs text-slate-500 font-semibold">
             {t.trust}
           </p>
+          <p className="mt-1 text-xs text-slate-500 font-semibold">
+            📍 Wadaki, Saswad Road, Pune (Near Datta Colony)
+          </p>
 
           <div className="mt-5 flex flex-col w-full max-w-65 gap-3">
-
             <a
               href={`https://wa.me/919370663838?text=${encodeURIComponent(t.msg)}`}
               className="flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-2xl font-bold shadow-md active:scale-95 transition"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaWhatsapp className="text-lg" />
               {t.ctaWA}
@@ -98,7 +100,7 @@ export default function Hero({ lang }) {
           ">
             <Image
               src="/HeroGC.webp"
-              alt="Students learning"
+              alt="Students studying at Ghorpade Coaching Classes in Wadaki Pune"
               fill
               sizes="(max-width: 768px) 100vw, 480px"
               className="object-cover rounded-3xl shadow-xl ring-4 ring-white"

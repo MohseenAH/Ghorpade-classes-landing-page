@@ -1,17 +1,68 @@
 import FloatingButtons from "@/components/FloatingButtons";
 import "./globals.css";
+
 export const metadata = {
-  title: "Ghorpade Classes",
-  description: "Coaching Classes in Pune",
+  title: "Best Coaching Classes in Wadaki (Saswad Rd) | Ghorpade Classes",
+  description:
+    "Top coaching classes near Wadaki, Saswad Rd (Pune). Expert teachers for Math & Science. Visit Ghorpade Classes, Datta Colony.",
+  keywords: [
+    "coaching classes in Wadaki",
+    "classes near Saswad Road Pune",
+    "tuition classes Wadaki Pune",
+    "math classes Wadaki",
+    "coaching classes Datta Colony Wadaki"
+  ],
+  metadataBase: new URL("https://ghorpade-classes-landing-page.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
+  
+  openGraph: {
+    title: "Best Coaching Classes in Wadaki Pune",
+    description: "Top classes near Saswad Rd with expert teachers.",
+    url: "https://ghorpade-classes-landing-page.vercel.app",
+    siteName: "Ghorpade Classes",
+    locale: "en_IN",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-  <html lang="en">
-  <body>
-    {children}
-    <FloatingButtons />
-  </body>
-</html>
+    <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="PbA0gLBwUPRnxQ0HiF25pISaPsjN2i6qu_TZbw-pqeM" />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      name: "Ghorpade Classes",
+      url: "https://ghorpade-classes-landing-page.vercel.app",
+      telephone: "+91XXXXXXXXXX",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "1262, Saswad Rd, Datta Colony, Pimpalmala, Wadaki",
+        addressLocality: "Wadaki",
+        addressRegion: "Maharashtra",
+        postalCode: "412308",
+        addressCountry: "IN",
+      },
+      areaServed: ["Wadaki", "Saswad Road", "Pune"],
+    }),
+  }}
+/>
+      </head>
+      <body>
+        {children}
+        <FloatingButtons/>
+      </body>
+    </html>
   );
 }

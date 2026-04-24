@@ -18,6 +18,8 @@ export default function FloatingButtons() {
       <a
         href="https://wa.me/919370663838"
         className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <FaWhatsapp size={22} />
       </a>
