@@ -43,7 +43,7 @@ export default function BoardsSection({ lang }) {
   const data = content[lang];
 
   return (
-    <section className="w-full bg-gray-50 py-14">
+    <section id="courses" className="w-full bg-gray-50 py-14">
 
       <div className="max-w-5xl mx-auto px-4">
 

@@ -30,7 +30,7 @@ export default function Hero({ lang }) {
   const t = content[lang];
 
   return (
-    <section className="
+    <section id="home" className="
       relative w-full 
       py-5
       pb-6 

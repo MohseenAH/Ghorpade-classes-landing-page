@@ -1,5 +1,7 @@
 import FloatingButtons from "@/components/FloatingButtons";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import FinalCTA from "@/components/FinalCTA";
 
 export const metadata = {
   title: "Best Coaching Classes in Wadaki (Saswad Rd) | Ghorpade Classes",
@@ -61,7 +63,6 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
-        <FloatingButtons/>
       </body>
     </html>
   );
